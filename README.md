@@ -59,22 +59,28 @@ See each skill's **Related Skills** section for the full dependency map.
 | [analytics-tracking](skills/analytics-tracking/) | When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions... |
 | [churn-prevention](skills/churn-prevention/) | When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or... |
 | [cold-email](skills/cold-email/) | Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails,... |
+| [community-led-growth](skills/community-led-growth/) | When the user wants to build a marketing community, use community as a growth channel, or turn members into advocates.... |
 | [competitor-alternatives](skills/competitor-alternatives/) | When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when... |
 | [content-strategy](skills/content-strategy/) | When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also... |
 | [copy-editing](skills/copy-editing/) | When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this... |
 | [copywriting](skills/copywriting/) | When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages,... |
+| [demand-generation](skills/demand-generation/) | When the user wants to build a B2B demand generation program, create pipeline from content and campaigns, or move from... |
 | [email-sequence](skills/email-sequence/) | When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email... |
 | [form-cro](skills/form-cro/) | When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms,... |
 | [free-tool-strategy](skills/free-tool-strategy/) | When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or... |
+| [influencer-marketing](skills/influencer-marketing/) | When the user wants to run influencer marketing campaigns, partner with creators, or build a creator marketing program.... |
 | [launch-strategy](skills/launch-strategy/) | When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user... |
+| [link-building](skills/link-building/) | When the user wants to build backlinks, increase domain authority, or develop a link acquisition strategy. Also use... |
 | [marketing-ideas](skills/marketing-ideas/) | When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the... |
 | [marketing-psychology](skills/marketing-psychology/) | When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when... |
+| [newsletter-growth](skills/newsletter-growth/) | When the user wants to grow an email newsletter, increase subscriber count, improve open rates, or build an audience... |
 | [onboarding-cro](skills/onboarding-cro/) | When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also... |
 | [page-cro](skills/page-cro/) | When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing... |
 | [paid-ads](skills/paid-ads/) | When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X,... |
 | [paywall-upgrade-cro](skills/paywall-upgrade-cro/) | When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use... |
 | [popup-cro](skills/popup-cro/) | When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also... |
 | [pricing-strategy](skills/pricing-strategy/) | When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions... |
+| [product-led-growth](skills/product-led-growth/) | When the user wants to implement a product-led growth (PLG) strategy — freemium, free trials, product virality, or... |
 | [product-marketing-context](skills/product-marketing-context/) | When the user wants to create or update their product marketing context document. Also use when the user mentions... |
 | [programmatic-seo](skills/programmatic-seo/) | When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions... |
 | [referral-program](skills/referral-program/) | When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy.... |
@@ -85,6 +91,8 @@ See each skill's **Related Skills** section for the full dependency map.
 | [signup-flow-cro](skills/signup-flow-cro/) | When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the... |
 | [site-architecture](skills/site-architecture/) | When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal... |
 | [social-content](skills/social-content/) | When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram,... |
+| [technical-seo](skills/technical-seo/) | When the user wants to implement technical SEO improvements — Core Web Vitals, page speed, crawl budget, hreflang,... |
+| [video-seo](skills/video-seo/) | When the user wants to optimize YouTube videos or video content for search visibility, grow a YouTube channel, or... |
 <!-- SKILLS:END -->
 
 ## Installation
@@ -215,15 +223,27 @@ You can also invoke skills directly:
 ### SEO & Discovery
 - `seo-audit` - Technical and on-page SEO
 - `ai-seo` - AI search optimization (AEO, GEO, LLMO)
+- `technical-seo` - Core Web Vitals, crawl budget, speed, indexation
 - `programmatic-seo` - Scaled page generation
 - `site-architecture` - Page hierarchy, navigation, URL structure
 - `competitor-alternatives` - Comparison and alternative pages
 - `schema-markup` - Structured data
+- `link-building` - Backlinks, domain authority, digital PR
+- `video-seo` - YouTube channel growth and video rankings
+
+### Content & Copy
+- `copywriting` - Marketing page copy
+- `copy-editing` - Edit and polish existing copy
+- `cold-email` - B2B cold outreach emails and sequences
+- `email-sequence` - Automated email flows
+- `social-content` - Social media content
+- `content-strategy` - Content calendars, topic pillars, pillar pages
+- `newsletter-growth` - Email newsletter subscriber growth
 
 ### Paid & Distribution
 - `paid-ads` - Google, Meta, LinkedIn ad campaigns
 - `ad-creative` - Bulk ad creative generation and iteration
-- `social-content` - Social media scheduling and strategy
+- `influencer-marketing` - Creator and influencer campaigns
 
 ### Measurement & Testing
 - `analytics-tracking` - Event tracking setup
@@ -235,6 +255,8 @@ You can also invoke skills directly:
 ### Growth Engineering
 - `free-tool-strategy` - Marketing tools and calculators
 - `referral-program` - Referral and affiliate programs
+- `product-led-growth` - PLG motion: freemium, trials, viral loops
+- `community-led-growth` - Marketing communities (Discord, Slack, Reddit)
 
 ### Strategy & Monetization
 - `marketing-ideas` - 140 SaaS marketing ideas
@@ -245,6 +267,7 @@ You can also invoke skills directly:
 ### Sales & RevOps
 - `revops` - Lead lifecycle, scoring, routing, pipeline management
 - `sales-enablement` - Sales decks, one-pagers, objection docs, demo scripts
+- `demand-generation` - B2B demand gen: pipeline creation, intent data, ICP targeting
 
 ## Contributing
 
