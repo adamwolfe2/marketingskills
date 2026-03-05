@@ -1,0 +1,72 @@
+# Marketing Skills for AI Agents
+
+> A library of 40 AI agent skills for marketing tasks — conversion optimization, SEO, AEO, copywriting, growth engineering, email, paid ads, analytics, and more. Built for Claude Code, Cursor, Windsurf, and any agent supporting the Agent Skills spec.
+
+By Corey Haines (https://corey.co). MIT license. GitHub: https://github.com/coreyhaines31/marketingskills
+
+## Skills
+
+Skills install to `.agents/skills/` and give AI agents specialized marketing knowledge and workflows.
+
+- [product-marketing-context](skills/product-marketing-context/SKILL.md): Foundation skill — creates the shared product/audience context that all other skills read first
+- [page-cro](skills/page-cro/SKILL.md): Optimize any marketing page for conversions — homepage, landing pages, pricing
+- [signup-flow-cro](skills/signup-flow-cro/SKILL.md): Optimize signup, registration, and trial activation flows
+- [onboarding-cro](skills/onboarding-cro/SKILL.md): Improve post-signup onboarding and user activation
+- [form-cro](skills/form-cro/SKILL.md): Optimize lead capture and contact forms
+- [popup-cro](skills/popup-cro/SKILL.md): Create and optimize popups, modals, and overlays
+- [paywall-upgrade-cro](skills/paywall-upgrade-cro/SKILL.md): Optimize in-app paywalls and upgrade moments
+- [copywriting](skills/copywriting/SKILL.md): Write and improve marketing copy for any page
+- [copy-editing](skills/copy-editing/SKILL.md): Edit and polish existing marketing copy
+- [cold-email](skills/cold-email/SKILL.md): Write B2B cold emails and follow-up sequences
+- [email-sequence](skills/email-sequence/SKILL.md): Create automated email sequences and lifecycle flows
+- [social-content](skills/social-content/SKILL.md): Create and optimize social media content
+- [seo-audit](skills/seo-audit/SKILL.md): Audit technical and on-page SEO issues
+- [ai-seo](skills/ai-seo/SKILL.md): Optimize content for AI search (AEO, GEO, LLMO, AI Overviews)
+- [programmatic-seo](skills/programmatic-seo/SKILL.md): Build SEO pages at scale with templates and data
+- [site-architecture](skills/site-architecture/SKILL.md): Plan page hierarchy, navigation, and URL structure
+- [competitor-alternatives](skills/competitor-alternatives/SKILL.md): Build comparison and alternative pages for SEO
+- [schema-markup](skills/schema-markup/SKILL.md): Implement structured data and JSON-LD
+- [technical-seo](skills/technical-seo/SKILL.md): Implement Core Web Vitals, crawl budget, hreflang, site speed
+- [link-building](skills/link-building/SKILL.md): Build high-quality backlinks and domain authority
+- [content-strategy](skills/content-strategy/SKILL.md): Plan content calendars, topic pillars, and pillar pages
+- [paid-ads](skills/paid-ads/SKILL.md): Run paid campaigns on Google, Meta, LinkedIn, TikTok
+- [ad-creative](skills/ad-creative/SKILL.md): Generate and iterate ad creative at scale
+- [analytics-tracking](skills/analytics-tracking/SKILL.md): Set up GA4, event tracking, and GTM
+- [ab-test-setup](skills/ab-test-setup/SKILL.md): Design and implement A/B tests
+- [churn-prevention](skills/churn-prevention/SKILL.md): Reduce churn with cancel flows, save offers, dunning
+- [referral-program](skills/referral-program/SKILL.md): Build referral and affiliate programs
+- [free-tool-strategy](skills/free-tool-strategy/SKILL.md): Build free tools for lead generation and SEO
+- [product-led-growth](skills/product-led-growth/SKILL.md): Design PLG motion — freemium, trials, viral loops
+- [community-led-growth](skills/community-led-growth/SKILL.md): Build marketing communities (Discord, Slack, Reddit)
+- [newsletter-growth](skills/newsletter-growth/SKILL.md): Grow email newsletters and subscriber lists
+- [video-seo](skills/video-seo/SKILL.md): Optimize YouTube and video content for search
+- [influencer-marketing](skills/influencer-marketing/SKILL.md): Run influencer and creator marketing campaigns
+- [demand-generation](skills/demand-generation/SKILL.md): B2B demand generation strategy and execution
+- [marketing-ideas](skills/marketing-ideas/SKILL.md): 140 SaaS marketing ideas and growth tactics
+- [marketing-psychology](skills/marketing-psychology/SKILL.md): Apply behavioral science and psychology to marketing
+- [launch-strategy](skills/launch-strategy/SKILL.md): Plan product launches and feature announcements
+- [pricing-strategy](skills/pricing-strategy/SKILL.md): Develop pricing, packaging, and monetization strategy
+- [revops](skills/revops/SKILL.md): Revenue operations, lead scoring, routing, CRM automation
+- [sales-enablement](skills/sales-enablement/SKILL.md): Create sales decks, one-pagers, and objection docs
+
+## Tools
+
+65 zero-dependency Node.js CLI tools + 72 integration guides for marketing platforms.
+
+- [Tools Registry](tools/REGISTRY.md): Full index of all tools with API, MCP, CLI, and SDK availability
+
+## Installation
+
+```bash
+npx skills add coreyhaines31/marketingskills
+```
+
+Or via Claude Code plugin:
+```bash
+/plugin marketplace add coreyhaines31/marketingskills
+/plugin install marketing-skills
+```
+
+## Optional
+
+- [llms-full.txt](llms-full.txt): Full expanded content index for LLMs

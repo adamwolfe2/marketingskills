@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Skills — Agent Skills Library for AI-Powered Marketing</title>
+  <meta name="description" content="40 production-ready marketing skills for AI agents. Install once, use across Claude, GPT, Gemini, and any AI that supports Agent Skills. Covers CRO, SEO, growth, email, ads, and more." />
+  <meta name="keywords" content="AI marketing agent, marketing skills, agent skills, Claude Code plugin, SEO agent, CRO agent, marketing automation, AI marketing tools" />
+  <link rel="canonical" href="https://coreyhaines31.github.io/marketingskills/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://coreyhaines31.github.io/marketingskills/" />
+  <meta property="og:title" content="Marketing Skills — Agent Skills Library for AI-Powered Marketing" />
+  <meta property="og:description" content="40 production-ready marketing skills for AI agents. Install once, use across Claude, GPT, Gemini. CRO, SEO, growth, email, paid ads, and more." />
+  <meta property="og:image" content="https://coreyhaines31.github.io/marketingskills/og-image.png" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marketing Skills — Agent Skills Library for AI-Powered Marketing" />
+  <meta name="twitter:description" content="40 production-ready marketing skills for AI agents. Install once, use across Claude, GPT, Gemini." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Marketing Skills",
+    "description": "A library of 40 production-ready marketing skills for AI agents, following the Agent Skills specification. Covers conversion rate optimization, SEO, demand generation, email marketing, paid ads, growth, and more.",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Cross-platform",
+    "softwareVersion": "1.1.0",
+    "author": {
+      "@type": "Person",
+      "name": "Corey Haines",
+      "url": "https://github.com/coreyhaines31"
+    },
+    "license": "https://opensource.org/licenses/MIT",
+    "codeRepository": "https://github.com/coreyhaines31/marketingskills",
+    "programmingLanguage": "JavaScript",
+    "keywords": "marketing, AI agent, SEO, CRO, email marketing, growth hacking, demand generation, product-led growth, Claude Code, Agent Skills"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #0f0f0f;
+      color: #e8e8e8;
+      line-height: 1.6;
+    }
+    a { color: #7c9fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .hero {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: #1a1a2e;
+      border: 1px solid #2a2a4e;
+      color: #7c9fff;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    h1 span { color: #7c9fff; }
+    .subtitle {
+      font-size: 18px;
+      color: #999;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .cta-group {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.85; text-decoration: none; }
+    .btn-primary { background: #7c9fff; color: #0f0f0f; }
+    .btn-secondary { background: #1e1e1e; color: #e8e8e8; border: 1px solid #333; }
+
+    .install-block {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 20px 24px;
+      max-width: 580px;
+      margin: 0 auto 80px;
+      text-align: left;
+    }
+    .install-block .label { font-size: 12px; color: #666; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .install-block code {
+      display: block;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 14px;
+      color: #a8d8a8;
+      margin-bottom: 8px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      padding: 40px 24px;
+      border-top: 1px solid #1e1e1e;
+      border-bottom: 1px solid #1e1e1e;
+      margin-bottom: 80px;
+    }
+    .stat { text-align: center; }
+    .stat .num { font-size: 36px; font-weight: 800; color: #7c9fff; }
+    .stat .lbl { font-size: 14px; color: #666; margin-top: 4px; }
+
+    .grid {
+      max-width: 1000px;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: #888; margin-bottom: 16px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 12px;
+      background: #1e1e1e;
+      color: #aaa;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .skills-list {
+      max-width: 860px;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+    }
+    .skills-list h2 { font-size: 24px; font-weight: 700; margin-bottom: 24px; }
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .skill-item {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 14px;
+      color: #ccc;
+    }
+    .skill-item a { color: #ccc; }
+
+    footer {
+      border-top: 1px solid #1e1e1e;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    footer a { color: #666; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="badge">Agent Skills Specification · MIT License</div>
+    <h1>Marketing <span>Agent Skills</span><br>for AI-Powered Teams</h1>
+    <p class="subtitle">
+      40 production-ready skills that plug into Claude, GPT-4, Gemini, and any agent that
+      supports the Agent Skills spec. One install. Every marketing discipline.
+    </p>
+    <div class="cta-group">
+      <a class="btn btn-primary" href="https://github.com/coreyhaines31/marketingskills">View on GitHub</a>
+      <a class="btn btn-secondary" href="https://github.com/coreyhaines31/marketingskills#installation">Install Skills</a>
+    </div>
+
+    <div class="install-block">
+      <div class="label">Install via git</div>
+      <code>git clone https://github.com/coreyhaines31/marketingskills</code>
+      <code>cp -r marketingskills/skills/* .agents/skills/</code>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">40</div><div class="lbl">Marketing Skills</div></div>
+    <div class="stat"><div class="num">65+</div><div class="lbl">CLI Tools</div></div>
+    <div class="stat"><div class="num">70+</div><div class="lbl">Integration Guides</div></div>
+    <div class="stat"><div class="num">MIT</div><div class="lbl">License</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Conversion Rate Optimization</h3>
+      <p>Optimize every stage of your funnel with specialized CRO skills.</p>
+      <div class="tag-list">
+        <span class="tag">page-cro</span>
+        <span class="tag">signup-flow-cro</span>
+        <span class="tag">onboarding-cro</span>
+        <span class="tag">popup-cro</span>
+        <span class="tag">form-cro</span>
+        <span class="tag">paywall-upgrade-cro</span>
+        <span class="tag">ab-test-setup</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>SEO & Content Discovery</h3>
+      <p>Rank in Google, AI search engines, and LLM responses simultaneously.</p>
+      <div class="tag-list">
+        <span class="tag">ai-seo</span>
+        <span class="tag">technical-seo</span>
+        <span class="tag">seo-audit</span>
+        <span class="tag">programmatic-seo</span>
+        <span class="tag">link-building</span>
+        <span class="tag">schema-markup</span>
+        <span class="tag">site-architecture</span>
+        <span class="tag">video-seo</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Growth & Demand Generation</h3>
+      <p>Build sustainable acquisition through product, community, and content.</p>
+      <div class="tag-list">
+        <span class="tag">product-led-growth</span>
+        <span class="tag">demand-generation</span>
+        <span class="tag">community-led-growth</span>
+        <span class="tag">newsletter-growth</span>
+        <span class="tag">influencer-marketing</span>
+        <span class="tag">referral-program</span>
+        <span class="tag">free-tool-strategy</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Copywriting & Email</h3>
+      <p>Write high-converting copy and automated email sequences.</p>
+      <div class="tag-list">
+        <span class="tag">copywriting</span>
+        <span class="tag">copy-editing</span>
+        <span class="tag">email-sequence</span>
+        <span class="tag">cold-email</span>
+        <span class="tag">ad-creative</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Analytics & Paid Ads</h3>
+      <p>Track what matters and scale what works across every channel.</p>
+      <div class="tag-list">
+        <span class="tag">analytics-tracking</span>
+        <span class="tag">paid-ads</span>
+        <span class="tag">social-content</span>
+        <span class="tag">marketing-ideas</span>
+        <span class="tag">marketing-psychology</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Revenue Operations</h3>
+      <p>Align sales, marketing, and success around a unified revenue engine.</p>
+      <div class="tag-list">
+        <span class="tag">revops</span>
+        <span class="tag">sales-enablement</span>
+        <span class="tag">churn-prevention</span>
+        <span class="tag">pricing-strategy</span>
+        <span class="tag">competitor-alternatives</span>
+        <span class="tag">launch-strategy</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-list">
+    <h2>All 40 Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/ab-test-setup">ab-test-setup</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/ad-creative">ad-creative</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/ai-seo">ai-seo</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/analytics-tracking">analytics-tracking</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/churn-prevention">churn-prevention</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email">cold-email</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/community-led-growth">community-led-growth</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/competitor-alternatives">competitor-alternatives</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/content-strategy">content-strategy</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/copy-editing">copy-editing</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting">copywriting</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/demand-generation">demand-generation</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/email-sequence">email-sequence</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/form-cro">form-cro</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/free-tool-strategy">free-tool-strategy</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/influencer-marketing">influencer-marketing</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/launch-strategy">launch-strategy</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/link-building">link-building</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/marketing-ideas">marketing-ideas</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/marketing-psychology">marketing-psychology</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/newsletter-growth">newsletter-growth</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/onboarding-cro">onboarding-cro</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/page-cro">page-cro</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/paid-ads">paid-ads</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/paywall-upgrade-cro">paywall-upgrade-cro</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/popup-cro">popup-cro</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/pricing-strategy">pricing-strategy</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/product-led-growth">product-led-growth</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/product-marketing-context">product-marketing-context</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/programmatic-seo">programmatic-seo</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/referral-program">referral-program</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/revops">revops</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/sales-enablement">sales-enablement</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/schema-markup">schema-markup</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/seo-audit">seo-audit</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/signup-flow-cro">signup-flow-cro</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/site-architecture">site-architecture</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/social-content">social-content</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/technical-seo">technical-seo</a></div>
+      <div class="skill-item"><a href="https://github.com/coreyhaines31/marketingskills/tree/main/skills/video-seo">video-seo</a></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="https://github.com/coreyhaines31/marketingskills">GitHub</a> ·
+      <a href="https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md">Tools Registry</a> ·
+      <a href="https://coreyhaines31.github.io/marketingskills/llms.txt">llms.txt</a> ·
+      <a href="https://agentskills.io">Agent Skills Spec</a> ·
+      MIT License · Made by <a href="https://github.com/coreyhaines31">Corey Haines</a>
+    </p>
+  </footer>
+
+</body>
+</html>

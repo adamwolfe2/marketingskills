@@ -36,8 +36,23 @@ Current versions of all skills. Agents can compare against local versions to che
 | signup-flow-cro | 1.1.0 | 2026-02-27 |
 | site-architecture | 1.1.0 | 2026-02-27 |
 | social-content | 1.1.0 | 2026-02-27 |
+| community-led-growth | 1.0.0 | 2026-03-05 |
+| demand-generation | 1.0.0 | 2026-03-05 |
+| influencer-marketing | 1.0.0 | 2026-03-05 |
+| link-building | 1.0.0 | 2026-03-05 |
+| newsletter-growth | 1.0.0 | 2026-03-05 |
+| product-led-growth | 1.0.0 | 2026-03-05 |
+| technical-seo | 1.0.0 | 2026-03-05 |
+| video-seo | 1.0.0 | 2026-03-05 |
 
 ## Recent Changes
+
+### 2026-03-05
+- Added 8 new skills: `technical-seo`, `link-building`, `product-led-growth`, `community-led-growth`, `newsletter-growth`, `video-seo`, `influencer-marketing`, `demand-generation`
+- Added 4 new tool integrations with CLIs: `notion`, `perplexity`, `youtube-analytics`, `reddit`
+- Added `llms.txt` (AEO standard) for LLM crawler discovery
+- Added GitHub Pages docs site (`docs/`) with SEO meta tags, JSON-LD schema, sitemap, robots.txt
+- Updated tools registry with new integrations
 
 ### 2026-02-27
 - Migrated context path from `.claude/` to `.agents/` for agent-agnostic compatibility

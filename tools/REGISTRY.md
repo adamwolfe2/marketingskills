@@ -82,6 +82,10 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | shopify | Commerce | ✓ | - | ✓ | ✓ | [shopify.md](integrations/shopify.md) |
 | wordpress | CMS | ✓ | - | ✓ | ✓ | [wordpress.md](integrations/wordpress.md) |
 | webflow | CMS | ✓ | - | ✓ | ✓ | [webflow.md](integrations/webflow.md) |
+| notion | Productivity | ✓ | - | [✓](clis/notion.js) | ✓ | [notion.md](integrations/notion.md) |
+| perplexity | AI Search | ✓ | - | [✓](clis/perplexity.js) | - | [perplexity.md](integrations/perplexity.md) |
+| youtube-analytics | Video Analytics | ✓ | - | [✓](clis/youtube-analytics.js) | ✓ | [youtube-analytics.md](integrations/youtube-analytics.md) |
+| reddit | Community Intelligence | ✓ | - | [✓](clis/reddit.js) | ✓ | [reddit.md](integrations/reddit.md) |
 
 ---
 
@@ -389,6 +393,46 @@ E-commerce platforms and content management systems.
 
 **Agent recommendation**: Shopify for e-commerce. Webflow for marketing sites. WordPress for blogs.
 
+### Productivity & Knowledge Management
+
+Workspace tools for content planning, briefs, and knowledge bases.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **notion** | Content calendars, campaign briefs, knowledge bases | REST API v1 |
+
+**Agent recommendation**: Notion for storing and retrieving content briefs, campaign plans, competitive intel, and content calendars.
+
+### AI Search & Research
+
+AI-powered search engines for real-time research and AEO auditing.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **perplexity** | AEO auditing, competitive research, market intelligence | Returns citations |
+
+**Agent recommendation**: Perplexity for checking if your brand is cited in AI search answers (AEO), and for real-time competitive and market research with source citations.
+
+### Video Analytics
+
+YouTube channel performance and video search optimization.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **youtube-analytics** | Channel metrics, video SEO, audience retention, search terms | OAuth2 required |
+
+**Agent recommendation**: YouTube Analytics for identifying top-performing videos, search terms driving traffic, audience retention patterns, and subscriber growth trends.
+
+### Community Intelligence
+
+Community monitoring, brand mention tracking, and Reddit research.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **reddit** | Brand mentions, competitor analysis, community discovery, AEO presence | OAuth2 client credentials |
+
+**Agent recommendation**: Reddit for monitoring brand and competitor mentions across communities. Critical for AEO since Reddit content is heavily cited by Perplexity, ChatGPT, and Gemini in their responses.
+
 ---
 
 ## CLI Tools
@@ -445,3 +489,11 @@ To use MCP tools, ensure the appropriate MCP server is configured in your enviro
 ### Running paid ads
 1. Read [google-ads.md](integrations/google-ads.md) for search campaigns
 2. Read [meta-ads.md](integrations/meta-ads.md) for social campaigns
+
+### Monitoring brand/AI search presence (AEO)
+1. Read [perplexity.md](integrations/perplexity.md) for AI search citation audits
+2. Read [reddit.md](integrations/reddit.md) for community mention monitoring
+3. Read [youtube-analytics.md](integrations/youtube-analytics.md) for video search performance
+
+### Managing content and campaign briefs
+1. Read [notion.md](integrations/notion.md) for creating and querying Notion databases
